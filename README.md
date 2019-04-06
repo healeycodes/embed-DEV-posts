@@ -18,13 +18,17 @@ Creates a feed of DEV posts.
 Generates HTML that looks like this:
 
 ```html
-<div class="posts">
+<div class="example">
   <ul class="dev-feed-list">
-    <li>
-      <a href="https://dev.to/devteam/dev-community-is-open-sourcing-its-performance-metrics-via-skylight-221m" class="dev-feed-item">DEV Community Is Open-Sourcing Its Performance Metrics via Skylight</a>
+    <li class="dev-feed-item">
+      <a href="https://dev.to/devteam/dev-community-is-open-sourcing-its-performance-metrics-via-skylight-221m">DEV Community Is Open-Sourcing Its Performance Metrics via Skylight</a>
     </li>
   </ul>
 </div>
 ```
 
 Use `.dev-feed-list` to style the list and `.dev-feed-item` to style the items.
+
+<br>
+
+Accepting PRs/issues
