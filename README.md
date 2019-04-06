@@ -31,4 +31,4 @@ Use `.dev-feed-list` to style the list and `.dev-feed-item` to style the items.
 
 <br>
 
-Accepting PRs/issues
+Accepting PRs/issues 😀
