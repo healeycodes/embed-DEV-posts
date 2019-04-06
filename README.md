@@ -6,7 +6,7 @@ A tiny library for embedding DEV posts. Explainer post here!
 
 #### `function createFeed(elem, username, num = 5)`
 
-Creates a DEV feed of posts.
+Creates a feed of DEV posts.
 
  * **Parameters:**
    * `elem` — `Element` — - Place list of posts inside this element.
