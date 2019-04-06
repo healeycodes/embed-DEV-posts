@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="../index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page">
+        <div>
+            <a class="github-button" href="https://github.com/healeycodes/embed-DEV-posts" data-icon="octicon-star"
+                data-size="large" aria-label="Star healeycodes/embed-DEV-posts on GitHub">Star</a>
+            <a class="github-button" href="https://github.com/healeycodes/embed-DEV-posts/fork"
+                data-icon="octicon-repo-forked" data-size="large"
+                aria-label="Fork healeycodes/embed-DEV-posts on GitHub">Fork</a>
+            <p>
+                A tiny library for embedding DEV posts.
+            </p>
+            <input id="username" type="text" placeholder="DEV username, e.g. ben">
+            <button onclick="createFeed(
+                document.querySelector('.posts'),
+                document.querySelector('#username').value
+            )">Create Feed!</button>
+        </div>
+        <div class="posts"></div>
+    </div>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
