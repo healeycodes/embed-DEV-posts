@@ -4,14 +4,14 @@ A tiny library for embedding your latest DEV posts, sorted by popularity. Explai
 
 <hr>
 
-#### `function createFeed(elem, username, num = 5)`
+#### `function createFeed(elem, username, numberOfPosts = 5)`
 
 Creates a feed of DEV posts.
 
  * **Parameters:**
    * `elem` — `Element` — Place list of posts inside this element.
    * `username` — `string` — DEV username, e.g. 'ben'.
-   * `num` — `number` — Number of posts to list.
+   * `numberOfPosts` — `number` — Number of posts to list.
 
 <hr>
 
