@@ -4,14 +4,14 @@ const api = 'https://dev.to/api';
  * Creates a feed of DEV posts.
  * @param {Element} elem - Place list of posts inside this element.
  * @param {string} username - DEV username, e.g. 'ben'.
- * @param {number} num - Number of posts to list. 
+ * @param {number} numberOfPosts - Number of posts to list. 
  */
-function createFeed(elem, username, num = 5) {
+function createFeed(elem, username, numberOfPosts = 5) {
     const feed = document.createElement('ul');
     feed.classList.add('dev-feed-list');
     getPosts(username)
         .then(function (posts) {
-            posts.length = num;
+            posts.length = numberOfPosts;
             posts.forEach(function (post) {
                 const item = document.createElement('li');
                 item.classList.add('dev-feed-item');
