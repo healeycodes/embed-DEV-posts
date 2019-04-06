@@ -7,22 +7,23 @@ const api = 'https://dev.to/api';
  * @param {string} username - DEV username, e.g. 'ben'.
  * @param {number} num - Number of posts to list. 
  */
-function createFeed(elem, username, num = 30) {
+function createFeed(elem, username, num = 5) {
     const feed = document.createElement('ul');
     feed.classList.add('dev-feed-list');
-    getPosts(username).then(function (posts) {
-        posts.length = num;
-        posts.forEach(function (post) {
-            const item = document.createElement('li');
-            const link = document.createElement('a');
-            link.href = post.url;
-            link.innerText = post.title;
-            link.classList.add('dev-feed-item');
-            item.appendChild(link);
-            feed.appendChild(item);
+    getPosts(username)
+        .then(function (posts) {
+            posts.length = num;
+            posts.forEach(function (post) {
+                const item = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = post.url;
+                link.innerText = post.title;
+                link.classList.add('dev-feed-item');
+                item.appendChild(link);
+                feed.appendChild(item);
+            });
+            elem.appendChild(feed);
         });
-        elem.appendChild(feed);
-    });
 }
 
 /**
@@ -33,10 +34,10 @@ function createFeed(elem, username, num = 30) {
  */
 function getPosts(username) {
     return fetch(`${api}/articles?username=${username}`)
-        .then(function (posts) {
-            return posts.json();
+        .then(function (response) {
+            return response.json();
         })
         .then(function (posts) {
-            return posts.sort(post = (a, b) => b.positive_reactions_count - a.positive_reactions_count);
+            return posts.sort((a, b) => b.positive_reactions_count - a.positive_reactions_count);
         });
 }
