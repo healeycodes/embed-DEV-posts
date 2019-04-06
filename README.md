@@ -1,6 +1,6 @@
 # Embed Your Latest DEV Posts Anywhere!
 
-A tiny library for embedding your latest DEV posts, sorted by popularity. Explainer post here!
+A tiny library for embedding your latest DEV posts, sorted by popularity. Explainer post [here](https://dev.to/healeycodes/embed-your-latest-dev-posts-anywhere-lj9)!
 
 <hr>
 
