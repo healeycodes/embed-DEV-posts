@@ -9,9 +9,9 @@ A tiny library for embedding DEV posts. Explainer post here!
 Creates a feed of DEV posts.
 
  * **Parameters:**
-   * `elem` — `Element` — - Place list of posts inside this element.
-   * `username` — `string` — - DEV username, e.g. 'ben'.
-   * `num` — `number` — - Number of posts to list.
+   * `elem` — `Element` — Place list of posts inside this element.
+   * `username` — `string` — DEV username, e.g. 'ben'.
+   * `num` — `number` — Number of posts to list.
 
 <hr>
 
