@@ -21,7 +21,9 @@ Generates HTML that looks like this:
 <div class="example">
   <ul class="dev-feed-list">
     <li class="dev-feed-item">
-      <a href="https://dev.to/devteam/dev-community-is-open-sourcing-its-performance-metrics-via-skylight-221m">DEV Community Is Open-Sourcing Its Performance Metrics via Skylight</a>
+      <a href="https://dev.to/devteam/dev-community-is-open-sourcing-its-performance-metrics-via-skylight-221m">
+        DEV Community Is Open-Sourcing Its Performance Metrics via Skylight
+      </a>
     </li>
   </ul>
 </div>
