@@ -1,6 +1,6 @@
 # Embed Your Latest DEV Posts Anywhere!
 
-A tiny library for embedding DEV posts. Explainer post here!
+A tiny library for embedding your latest DEV posts, sorted by popularity. Explainer post here!
 
 <hr>
 
