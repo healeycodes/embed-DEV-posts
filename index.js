@@ -2,7 +2,6 @@ const api = 'https://dev.to/api';
 
 /** 
  * Creates a DEV feed of posts.
- * @constructor
  * @param {Element} elem - Place list of posts inside this element.
  * @param {string} username - DEV username, e.g. 'ben'.
  * @param {number} num - Number of posts to list. 
